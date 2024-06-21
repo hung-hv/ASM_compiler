@@ -1,0 +1,3 @@
+C:/Users/HAU5HC/Documents/stm32/ASM_compiler/build/CMakeFiles/main.dir
+C:/Users/HAU5HC/Documents/stm32/ASM_compiler/build/CMakeFiles/edit_cache.dir
+C:/Users/HAU5HC/Documents/stm32/ASM_compiler/build/CMakeFiles/rebuild_cache.dir
