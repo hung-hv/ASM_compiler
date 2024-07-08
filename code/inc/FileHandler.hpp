@@ -1,5 +1,4 @@
 #include <fstream>
-
 class FileHandler {
 public:
     // Constructor
@@ -12,17 +11,19 @@ public:
 
     void setFilePath(const std::string& filename);
 
-    void FileHandler::getLine(int Line);
+    // void FileHandler::getLine(int Line);
     // Methods
-    void openFile(const std::string& filename);
-    void closeFile();
-    void readFile();
-    void writeFile(const std::string& content);
+    std::string openFile(const std::string& filename);
+    void printFile();
+    // void closeFile();
+    // void readFile();
+    // void writeFile(const std::string& content);
 
 private:
     char* filename;
-    char* curLine;
+    char* s_curLine;
+    char s_curChar;
     std::ifstream file;
-    int line;
+    int curLine;
     int curChar;
 };

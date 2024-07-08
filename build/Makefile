@@ -129,6 +129,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+code/src/FileHandler.obj: code/src/FileHandler.cpp.obj
+.PHONY : code/src/FileHandler.obj
+
+# target to build an object file
+code/src/FileHandler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/code/src/FileHandler.cpp.obj
+.PHONY : code/src/FileHandler.cpp.obj
+
+code/src/FileHandler.i: code/src/FileHandler.cpp.i
+.PHONY : code/src/FileHandler.i
+
+# target to preprocess a source file
+code/src/FileHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/code/src/FileHandler.cpp.i
+.PHONY : code/src/FileHandler.cpp.i
+
+code/src/FileHandler.s: code/src/FileHandler.cpp.s
+.PHONY : code/src/FileHandler.s
+
+# target to generate assembly for a file
+code/src/FileHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/code/src/FileHandler.cpp.s
+.PHONY : code/src/FileHandler.cpp.s
+
 code/src/lexer.obj: code/src/lexer.cpp.obj
 .PHONY : code/src/lexer.obj
 
@@ -186,6 +210,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... main
+	@echo ... code/src/FileHandler.obj
+	@echo ... code/src/FileHandler.i
+	@echo ... code/src/FileHandler.s
 	@echo ... code/src/lexer.obj
 	@echo ... code/src/lexer.i
 	@echo ... code/src/lexer.s

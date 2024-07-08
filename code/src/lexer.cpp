@@ -20,7 +20,6 @@ lexer::~lexer()
 
 char lexer::NextChar()
 {
-    
     this->curPos++;
     this->curChar = this->demo + this->curPos;
     char c = *(this->curChar);

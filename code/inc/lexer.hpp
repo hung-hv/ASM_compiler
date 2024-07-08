@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 class lexer
 {
@@ -10,8 +11,10 @@ private:
 
 public:
     char* demo = "this is test";
+    std::string source;
     lexer(/* args */);
     ~lexer();
     char NextChar(); //parse to next char in lexer source
+    int getSrouce()
 };
 

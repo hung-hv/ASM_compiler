@@ -68,11 +68,26 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
+CMakeFiles/main.dir/code/src/FileHandler.cpp.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/code/src/FileHandler.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
+CMakeFiles/main.dir/code/src/FileHandler.cpp.obj: C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/src/FileHandler.cpp
+CMakeFiles/main.dir/code/src/FileHandler.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HAU5HC\Documents\stm32\ASM_compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/code/src/FileHandler.cpp.obj"
+	C:\PROGRA~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/code/src/FileHandler.cpp.obj -MF CMakeFiles\main.dir\code\src\FileHandler.cpp.obj.d -o CMakeFiles\main.dir\code\src\FileHandler.cpp.obj -c C:\Users\HAU5HC\Documents\stm32\ASM_compiler\code\src\FileHandler.cpp
+
+CMakeFiles/main.dir/code/src/FileHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/code/src/FileHandler.cpp.i"
+	C:\PROGRA~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HAU5HC\Documents\stm32\ASM_compiler\code\src\FileHandler.cpp > CMakeFiles\main.dir\code\src\FileHandler.cpp.i
+
+CMakeFiles/main.dir/code/src/FileHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/code/src/FileHandler.cpp.s"
+	C:\PROGRA~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HAU5HC\Documents\stm32\ASM_compiler\code\src\FileHandler.cpp -o CMakeFiles\main.dir\code\src\FileHandler.cpp.s
+
 CMakeFiles/main.dir/code/src/lexer.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/code/src/lexer.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/code/src/lexer.cpp.obj: C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/src/lexer.cpp
 CMakeFiles/main.dir/code/src/lexer.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HAU5HC\Documents\stm32\ASM_compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/code/src/lexer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HAU5HC\Documents\stm32\ASM_compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/code/src/lexer.cpp.obj"
 	C:\PROGRA~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/code/src/lexer.cpp.obj -MF CMakeFiles\main.dir\code\src\lexer.cpp.obj.d -o CMakeFiles\main.dir\code\src\lexer.cpp.obj -c C:\Users\HAU5HC\Documents\stm32\ASM_compiler\code\src\lexer.cpp
 
 CMakeFiles/main.dir/code/src/lexer.cpp.i: cmake_force
@@ -87,7 +102,7 @@ CMakeFiles/main.dir/code/src/main.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/code/src/main.cpp.obj: CMakeFiles/main.dir/includes_CXX.rsp
 CMakeFiles/main.dir/code/src/main.cpp.obj: C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/src/main.cpp
 CMakeFiles/main.dir/code/src/main.cpp.obj: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HAU5HC\Documents\stm32\ASM_compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/code/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HAU5HC\Documents\stm32\ASM_compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/code/src/main.cpp.obj"
 	C:\PROGRA~1\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/code/src/main.cpp.obj -MF CMakeFiles\main.dir\code\src\main.cpp.obj.d -o CMakeFiles\main.dir\code\src\main.cpp.obj -c C:\Users\HAU5HC\Documents\stm32\ASM_compiler\code\src\main.cpp
 
 CMakeFiles/main.dir/code/src/main.cpp.i: cmake_force
@@ -100,19 +115,21 @@ CMakeFiles/main.dir/code/src/main.cpp.s: cmake_force
 
 # Object files for target main
 main_OBJECTS = \
+"CMakeFiles/main.dir/code/src/FileHandler.cpp.obj" \
 "CMakeFiles/main.dir/code/src/lexer.cpp.obj" \
 "CMakeFiles/main.dir/code/src/main.cpp.obj"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
+main.exe: CMakeFiles/main.dir/code/src/FileHandler.cpp.obj
 main.exe: CMakeFiles/main.dir/code/src/lexer.cpp.obj
 main.exe: CMakeFiles/main.dir/code/src/main.cpp.obj
 main.exe: CMakeFiles/main.dir/build.make
 main.exe: CMakeFiles/main.dir/linkLibs.rsp
 main.exe: CMakeFiles/main.dir/objects1.rsp
 main.exe: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\HAU5HC\Documents\stm32\ASM_compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable main.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\HAU5HC\Documents\stm32\ASM_compiler\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable main.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\main.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

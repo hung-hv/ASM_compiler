@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/code/src/FileHandler.cpp.obj"
+  "CMakeFiles/main.dir/code/src/FileHandler.cpp.obj.d"
   "CMakeFiles/main.dir/code/src/lexer.cpp.obj"
   "CMakeFiles/main.dir/code/src/lexer.cpp.obj.d"
   "CMakeFiles/main.dir/code/src/main.cpp.obj"
