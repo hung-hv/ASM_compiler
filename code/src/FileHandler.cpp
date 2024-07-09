@@ -1,6 +1,7 @@
 #include "FileHandler.hpp"
 #include <string.h>
 #include <iostream>
+#include <sstream>
 
 FileHandler::FileHandler()
 {
@@ -24,14 +25,17 @@ void FileHandler::setFilePath(const std::string& filename)
     strcpy(this->filename, filename.c_str());
 }
 
+
+
 std::string FileHandler::openFile(const std::string& filename)
 {
-    // std::string file;
     std::stringstream buffer;
-    this->filename = (char*)malloc(sizeof(char) * filename.length());
-    strcpy(this->filename, filename.c_str());
-    this->file.open(this->filename);
-
+    std::ifstream file(filename);
+    if (!file) {
+        throw std::runtime_error("Could not open file: " + filename);
+    }
+    buffer << file.rdbuf();
+    return buffer.str();
 }
 
 void FileHandler::printFile() {

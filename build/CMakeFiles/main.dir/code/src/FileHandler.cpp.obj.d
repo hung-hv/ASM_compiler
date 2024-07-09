@@ -142,4 +142,6 @@ CMakeFiles/main.dir/code/src/FileHandler.cpp.obj: \
  C:/PROGRA~1/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/fstream.tcc \
  C:/PROGRA~1/mingw64/x86_64-w64-mingw32/include/string.h \
  C:/PROGRA~1/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
- C:/PROGRA~1/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/iostream
+ C:/PROGRA~1/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/iostream \
+ C:/PROGRA~1/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/sstream \
+ C:/PROGRA~1/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/sstream.tcc
