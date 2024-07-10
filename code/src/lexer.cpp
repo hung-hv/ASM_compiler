@@ -25,7 +25,7 @@ char lexer::NextChar()
     this->curChar = this->c_source + this->curPos;
     char c = *(this->curChar);
     if (messageActivate != 0) {
-        std::cout << "NextChar: " << c << std::endl;
+        std::cout << "  NextChar: " << c << std::endl;
     }
     
     return c;
@@ -39,7 +39,7 @@ char lexer::PeekChar() {
         c = this->c_source[this->curPos + 1];
     }
     if (messageActivate != 0) {
-        std::cout << "PeekChar: " << c << std::endl;
+        std::cout << "  PeekChar: " << c << std::endl;
     }
     return c;
 }
@@ -62,10 +62,34 @@ int lexer::getSrouce(std::string source) {
 }
 
 void lexer::TestingLoop() {
-    char c = ' ';
-    while (c != '\0') {
-        c = this->NextChar();
-        std::cout << "TestingLoop: " << c << std::endl;
+    char curChar = ' ';
+    char peekChar = ' ';
+    while (curChar != '\0') {
+        curChar = this->NextChar();
+        peekChar = this->PeekChar();
+        if (messageActivate != 0) {
+            std::cout << "  curChar: " << curChar << std::endl;
+            std::cout << "  peekChar: " << peekChar << std::endl;
+        }
+    }
+}
+
+int lexer::isToken() {
+    char c = *(this->curChar);
+    if (c == '+') {
+        return 0;
+    } else if (c == '-') {
+        return 0;
+    } else if (c == '*') {
+        return 0;
+    } else if (c == '/') {
+        return 0;
+    } else if (c == '\n') { //new line
+        return 0;
+    } else if (c == '\0') { //EOF
+        return 0;
+    } else {
+        return 1;
     }
 }
 
