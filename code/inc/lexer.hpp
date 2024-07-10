@@ -8,6 +8,7 @@ private:
     
     char* curChar = NULL;
     int curPos = 0;
+    int sourceSize;
     // std::string source;
 
 public:

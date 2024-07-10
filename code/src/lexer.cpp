@@ -24,7 +24,23 @@ char lexer::NextChar()
     this->curPos++;
     this->curChar = this->c_source + this->curPos;
     char c = *(this->curChar);
-    std::cout << "NextChar: " << c << std::endl;
+    if (messageActivate != 0) {
+        std::cout << "NextChar: " << c << std::endl;
+    }
+    
+    return c;
+}
+
+char lexer::PeekChar() {
+    char c = ' ';
+    if ( (this->curPos + 1) >= this->sourceSize ) {
+        c = '\0';
+    } else {
+        c = this->c_source[this->curPos + 1];
+    }
+    if (messageActivate != 0) {
+        std::cout << "PeekChar: " << c << std::endl;
+    }
     return c;
 }
 
@@ -37,15 +53,24 @@ int lexer::getSrouce(std::string source) {
         this->sourceSize = source.length();
         this->c_source = (char*)malloc(sizeof(char) * this->sourceSize);
         strcpy(this->c_source, source.c_str());
-        std::cout << "-> source added" << std::endl;
+        if (messageActivate != 0) {
+            std::cout << "-> source added" << std::endl;
+            std::cout << "  -> size = " << this->sourceSize << std::endl;
+        }
         return 1; //success
     }
 }
 
 void lexer::TestingLoop() {
-    char c;
+    char c = ' ';
     while (c != '\0') {
         c = this->NextChar();
         std::cout << "TestingLoop: " << c << std::endl;
     }
 }
+
+// void lexer::PushMessage (std::string message) {
+//     if (messageActivate != 0) { //push message to serial window
+//         std::cout << "TestingLoop: " << c << std::endl;
+//     }
+// }
