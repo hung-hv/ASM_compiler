@@ -1,4 +1,5 @@
 #include "lexer.hpp"
+#include "Token.hpp"
 #include <string.h>
 
 lexer::lexer(/* args */)
@@ -88,9 +89,13 @@ int lexer::isToken() {
         return 0;
     } else if (c == '\0') { //EOF
         return 0;
-    } else {
-        return 1;
+    } else { // Unknow token
+        if (messageActivate != 0) {
+            std::cout << "<!> Unknow Token" << std::endl;
+        }
     }
+    // lex to next char
+    this->NextChar();
 }
 
 // void lexer::PushMessage (std::string message) {
