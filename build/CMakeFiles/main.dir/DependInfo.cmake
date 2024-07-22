@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/src/FileHandler.cpp" "CMakeFiles/main.dir/code/src/FileHandler.cpp.obj" "gcc" "CMakeFiles/main.dir/code/src/FileHandler.cpp.obj.d"
+  "C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/src/Token.cpp" "CMakeFiles/main.dir/code/src/Token.cpp.obj" "gcc" "CMakeFiles/main.dir/code/src/Token.cpp.obj.d"
   "C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/src/lexer.cpp" "CMakeFiles/main.dir/code/src/lexer.cpp.obj" "gcc" "CMakeFiles/main.dir/code/src/lexer.cpp.obj.d"
   "C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/src/main.cpp" "CMakeFiles/main.dir/code/src/main.cpp.obj" "gcc" "CMakeFiles/main.dir/code/src/main.cpp.obj.d"
   )

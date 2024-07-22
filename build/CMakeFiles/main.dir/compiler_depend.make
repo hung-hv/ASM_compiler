@@ -148,6 +148,38 @@ CMakeFiles/main.dir/code/src/FileHandler.cpp.obj: C:/Users/HAU5HC/Documents/stm3
   C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/sstream \
   C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/sstream.tcc
 
+CMakeFiles/main.dir/code/src/Token.cpp.obj: C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/src/Token.cpp \
+  C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/inc/Token.hpp \
+  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/cstdlib \
+  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/corecrt.h \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed/limits.h \
+  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include-fixed/syslimits.h \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/limits.h \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/stdlib.h \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/mm_malloc.h \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/errno.h \
+  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/std_abs.h \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/stdio.h \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/string.h \
+  C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h
+
 CMakeFiles/main.dir/code/src/lexer.cpp.obj: C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/src/lexer.cpp \
   C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/inc/lexer.hpp \
   C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/iostream \
@@ -285,6 +317,7 @@ CMakeFiles/main.dir/code/src/lexer.cpp.obj: C:/Users/HAU5HC/Documents/stm32/ASM_
   C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ostream.tcc \
   C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/istream \
   C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/istream.tcc \
+  C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/inc/Token.hpp \
   C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h
 
@@ -425,12 +458,14 @@ CMakeFiles/main.dir/code/src/main.cpp.obj: C:/Users/HAU5HC/Documents/stm32/ASM_c
   C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/istream \
   C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/istream.tcc \
   C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/inc/lexer.hpp \
+  C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/inc/Token.hpp \
   C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/inc/FileHandler.hpp \
   C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/fstream \
   C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/codecvt.h \
   C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
   C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
-  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/fstream.tcc
+  C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/fstream.tcc \
+  C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/inc/Token.hpp
 
 
 C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/istream:
@@ -544,6 +579,8 @@ C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/stdint.h:
 C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/typeinfo:
 
 C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/hash_bytes.h:
+
+C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/inc/Token.hpp:
 
 C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/char_traits.h:
 
@@ -730,3 +767,5 @@ C:/Program\ Files/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h:
 C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/iostream:
 
 C:/Program\ Files/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/sstream.tcc:
+
+C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/src/Token.cpp:

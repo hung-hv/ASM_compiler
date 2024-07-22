@@ -5,7 +5,9 @@ cmake_policy(SET CMP0009 NEW)
 # HEADER_LIST at CMakeLists.txt:7 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/inc/*.hpp")
 set(OLD_GLOB
+  "C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/inc/CommonConst.hpp"
   "C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/inc/FileHandler.hpp"
+  "C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/inc/Token.hpp"
   "C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/inc/lexer.hpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -17,6 +19,7 @@ endif()
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/src/*.cpp")
 set(OLD_GLOB
   "C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/src/FileHandler.cpp"
+  "C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/src/Token.cpp"
   "C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/src/lexer.cpp"
   "C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/src/main.cpp"
   )

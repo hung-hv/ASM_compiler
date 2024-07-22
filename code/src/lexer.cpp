@@ -1,5 +1,5 @@
 #include "lexer.hpp"
-#include "Token.hpp"
+
 #include <string.h>
 
 lexer::lexer(/* args */)
@@ -8,7 +8,7 @@ lexer::lexer(/* args */)
     // demo = (char*)malloc(sizeof(char) * strlen(this->demo));
     // demo = "this is a test";
     // this->curChar = (char*)this->demo;
-    this->curChar = NULL;
+    this->curChar = " ";
     this->curPos = -1;
     this->sourceSize = 0;
 }
@@ -75,27 +75,54 @@ void lexer::TestingLoop() {
     }
 }
 
-int lexer::isToken() {
+Token::Token_t lexer::GetToken() {
+    // std::cout << "<!> Token" << std::endl;
+    // Token::Token_t token;
+    Token eToken; //instance of Token
+    eToken.TokenObj.textToken = NULL;
+    eToken.TokenObj.kindToken = Token::UNKNOW;
+    // std::cout << "<!> create instance of Token" << std::endl;
+    // Token eToken; //instance of token
+    // eToken.Token
     char c = *(this->curChar);
+    // std::cout << c << std::endl;
     if (c == '+') {
-        return 0;
+        eToken.TokenObj = eToken.CreateToken(c, Token::PLUS);
     } else if (c == '-') {
-        return 0;
+        eToken.TokenObj = eToken.CreateToken(c, Token::MINUS);
     } else if (c == '*') {
-        return 0;
+        eToken.TokenObj = eToken.CreateToken(c, Token::ASTERISK);
     } else if (c == '/') {
-        return 0;
+        eToken.TokenObj = eToken.CreateToken(c, Token::SLASH);
     } else if (c == '\n') { //new line
-        return 0;
+        eToken.TokenObj = eToken.CreateToken(c, Token::NEWLINE);
     } else if (c == '\0') { //EOF
-        return 0;
+        eToken.TokenObj = eToken.CreateToken(c, Token::EOFILE);
     } else { // Unknow token
         if (messageActivate != 0) {
             std::cout << "<!> Unknow Token" << std::endl;
         }
     }
+    if (eToken.TokenObj.kindToken != Token::UNKNOW) {
+        if (messageActivate != 0) {
+            std::cout << eToken.TokenObj.textToken << std::endl;
+            std::cout << eToken.TokenObj.kindToken << std::endl;
+        }
+    }
+        
     // lex to next char
     this->NextChar();
+    return eToken.TokenObj;
+}
+
+void lexer::SkipWhiteSpace() {
+    char c = *(this->curChar);
+    while ( (c == ' ') || (c == '\t') || (c == '\r')) {
+        if (messageActivate != 0) {
+            std::cout << "<!> WhiteSpace" << std::endl;
+        }
+        this->NextChar();
+    }
 }
 
 // void lexer::PushMessage (std::string message) {

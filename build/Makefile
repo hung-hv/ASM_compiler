@@ -153,6 +153,30 @@ code/src/FileHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/code/src/FileHandler.cpp.s
 .PHONY : code/src/FileHandler.cpp.s
 
+code/src/Token.obj: code/src/Token.cpp.obj
+.PHONY : code/src/Token.obj
+
+# target to build an object file
+code/src/Token.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/code/src/Token.cpp.obj
+.PHONY : code/src/Token.cpp.obj
+
+code/src/Token.i: code/src/Token.cpp.i
+.PHONY : code/src/Token.i
+
+# target to preprocess a source file
+code/src/Token.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/code/src/Token.cpp.i
+.PHONY : code/src/Token.cpp.i
+
+code/src/Token.s: code/src/Token.cpp.s
+.PHONY : code/src/Token.s
+
+# target to generate assembly for a file
+code/src/Token.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/code/src/Token.cpp.s
+.PHONY : code/src/Token.cpp.s
+
 code/src/lexer.obj: code/src/lexer.cpp.obj
 .PHONY : code/src/lexer.obj
 
@@ -213,6 +237,9 @@ help:
 	@echo ... code/src/FileHandler.obj
 	@echo ... code/src/FileHandler.i
 	@echo ... code/src/FileHandler.s
+	@echo ... code/src/Token.obj
+	@echo ... code/src/Token.i
+	@echo ... code/src/Token.s
 	@echo ... code/src/lexer.obj
 	@echo ... code/src/lexer.i
 	@echo ... code/src/lexer.s

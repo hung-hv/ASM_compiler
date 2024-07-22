@@ -1,12 +1,10 @@
+#ifndef TOKEN_H
+#define TOKEN_H
 class Token {
 public:
     Token();
-    Token(char* text, TokenType token_type);
-    // ~Token();
-
-
-private:
     enum TokenType {
+        UNKNOW = -2,
         EOFILE = -1,
         NEWLINE = 0,
         NUMBER = 1,
@@ -39,7 +37,22 @@ private:
     };
 
     typedef struct Token_t {
-        char *textToken;
+        char* textToken;
         TokenType kindToken;
     } Token_t;
+
+    Token_t TokenObj;
+
+    Token_t CreateToken(char c_char, TokenType token_type);
+    Token_t CreateToken(char* c_text, int c_size, TokenType token_type);
+    // ~Token();
+
+
+private:
+    // typedef struct Token_t {
+    //     char *textToken;
+    //     TokenType kindToken;
+    // } Token_t;
 };
+
+#endif // TOKEN_H

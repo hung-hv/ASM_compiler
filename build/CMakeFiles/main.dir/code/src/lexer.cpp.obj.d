@@ -136,5 +136,6 @@ CMakeFiles/main.dir/code/src/lexer.cpp.obj: \
  C:/PROGRA~1/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/ostream.tcc \
  C:/PROGRA~1/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/istream \
  C:/PROGRA~1/mingw64/lib/gcc/x86_64-w64-mingw32/12.2.0/include/c++/bits/istream.tcc \
+ C:/Users/HAU5HC/Documents/stm32/ASM_compiler/code/inc/Token.hpp \
  C:/PROGRA~1/mingw64/x86_64-w64-mingw32/include/string.h \
  C:/PROGRA~1/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h
